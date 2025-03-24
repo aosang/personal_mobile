@@ -1,11 +1,7 @@
 <template>
   <div>
-    <router-view v-slot="{ Component }">
-      <mheader />
-      <transition name="fade">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <mheader />
+    <router-view />
   </div>
 </template>
 

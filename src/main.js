@@ -3,7 +3,7 @@ import './style.css'
 import App from './App.vue'
 import router from './router'
 
-import { Popup, Divider} from 'vant'
+import { Popup, Divider, Tab, Tabs, Step, Steps, Tag, Button } from 'vant'
 import 'vant/lib/index.css'
 
 import { addIcons } from "oh-vue-icons";
@@ -17,10 +17,15 @@ addIcons(FaMicrosoft);
 addIcons(FaTools);
 addIcons(MdTextsnippet);
 
-
 const app = createApp(App)
 app.use(router)
 app.use(Popup)
 app.use(Divider)
+app.use(Tab)
+app.use(Tabs)
+app.use(Step)
+app.use(Steps)
+app.use(Tag)
+app.use(Button)
 app.component("v-icon", OhVueIcon);
 app.mount('#app')
