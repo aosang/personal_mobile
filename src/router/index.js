@@ -4,8 +4,8 @@ const Home = () => import('@/views/Home/Home.vue')
 const About = () => import('@/views/About/about.vue')
 const Product = () => import('@/views/Product/Product.vue')
 const Mtool = () => import('@/views/Mtool/Mtool.vue')
-const routes = [
-  {
+const ProductDetails = () => import('@/views/ProductDetails/ProductDetails.vue')
+const routes = [{
     path: '/',
     name: 'Home',
     component: Home
@@ -14,15 +14,18 @@ const routes = [
     name: 'About',
     component: About
   }, {
-    path: '/product',
+    path: '/product/:id?',
     name: 'Product',
     component: Product
   }, {
     path: '/mtool',
     name: 'Mtool',
     component: Mtool
-  }
-]
+  }, {
+    path: '/productDetails/:id?',
+    name: 'ProductDetails',
+    component: ProductDetails
+  }]
 
 const router = createRouter({
   history: createWebHashHistory(),

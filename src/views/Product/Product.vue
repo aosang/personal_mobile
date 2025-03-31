@@ -1,7 +1,7 @@
 <template>
   <div class="p-6 mt-[50px]">
     <ul>
-      <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2">
+      <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(1)">
         <div class="overflow-hidden bg-[#f3f4f6] h-[100px] flex items-center justify-center">
           <img src="@/assets/product/logo_assets.png" alt="assets" class="w-[80%] mx-auto">
         </div>
@@ -34,7 +34,7 @@
         </div>
       </li>
 
-      <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2">
+      <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(2)">
         <div class="overflow-hidden bg-[#f3f4f6] h-[100px] flex items-center justify-center">
           <img src="@/assets/product/logo_assets.png" alt="assets" class="w-[80%] mx-auto">
         </div>
@@ -67,7 +67,7 @@
         </div>
       </li>
 
-      <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2">
+      <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(3)">
         <div class="overflow-hidden bg-[#f3f4f6] h-[100px] flex items-center justify-center">
           <img src="@/assets/product/logo_assets.png" alt="assets" class="w-[80%] mx-auto">
         </div>
@@ -100,7 +100,7 @@
         </div>
       </li>
 
-      <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2">
+      <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(4)">
         <div class="overflow-hidden bg-[#f3f4f6] h-[100px] flex items-center justify-center">
           <img src="@/assets/product/logo_assets.png" alt="assets" class="w-[80%] mx-auto">
         </div>
@@ -137,6 +137,15 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
+
+const goToProductDetails = (id) => {
+  router.push({
+    name: 'ProductDetails',
+    params: { id }
+  })
+}
 </script>
 

@@ -17,19 +17,19 @@
     <nav class="w-full h-[40px] border-b border-gray-100 text-[15px]">
       <div class="w-full h-[40px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/')">
         <v-icon name="md-home-round" class="w-5 h-5 text-gray-500 mr-1" />
-        Home
+        <span class="mt-[2px]">Home</span>
       </div>
       <div class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/product')">
         <v-icon name="fa-microsoft" class="w-5 h-5 text-gray-500 mr-1" />
-        Product
+        <span class="mt-[2px]">Product</span>
       </div>
       <div class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/about')">
-          <v-icon name="md-textsnippet" class="w-5 h-5 text-gray-500 mr-1" />
-          About
+        <v-icon name="md-textsnippet" class="w-5 h-5 text-gray-500 mr-1" />
+        <span class="mt-[2px]">About</span>
       </div>
       <div class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/mtool')">
         <v-icon name="fa-tools" class="w-5 h-5 text-gray-500 mr-1" />
-        Mtool
+        <span class="mt-[2px]">Mtool</span>
       </div>
     </nav>
     
@@ -37,19 +37,19 @@
       <label class="text-[16px] pl-4 font-bold h-[40px] border-b border-gray-100 flex items-center">Social Media</label>
       <div class="h-[48px] border-b border-gray-100 flex items-center pl-4">
         <img class="w-[18px] h-[18px] mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" />
-        <span class="text-[15px]">Email</span>
+        <span class="text-[15px] mt-[2px]">Email</span>
       </div>
       <div class="h-[48px] border-b border-gray-100 flex items-center pl-4">
         <img class="w-[16px] h-[16px] mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
-        <span class="text-[15px]">Twitter</span>
+        <span class="text-[15px] mt-[2px]">Twitter</span>
       </div>
       <div class="h-[48px] border-b border-gray-100 flex items-center pl-4 ">
         <img class="w-[18px] h-[18px] mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
-        <span class="text-[15px]">Linkedin</span>
+        <span class="text-[15px] mt-[2px]">Linkedin</span>
       </div>
       <div class="h-[48px] border-b border-gray-100 flex items-center pl-4">
         <v-icon name="co-wechat" class="-ml-1 mr-1 text-green-600 w-[26px] h-[26px]" />
-        <span class="text-[15px]">Wechat</span>
+        <span class="text-[15px] mt-[2px]">Wechat</span>
       </div>
     </nav>
   </van-popup>
