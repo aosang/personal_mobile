@@ -10,10 +10,10 @@
           I'm Miles Wang
         </div>
         <div class="text-gray-400">
-          Front-end engineer
+          {{ $t('message.position') }}
         </div>
         <div class="text-gray-400">
-          Qingdao, China
+          {{ $t('message.location') }}
         </div>
       </div>
     </div>
@@ -21,10 +21,12 @@
     <div class="mt-8">
       <van-divider content-position="center">
         <div class="text-black  text-xl">
-          What I can do
+          {{ $t('message.subTitle') }}
         </div>
       </van-divider>
-      <p class="text-[15px] text-gray-400">As an engineer with five years of experience in front-end development and three years in full-stack development, I have collaborated with many talented and diverse teams of developers and designers. We have delivered high-quality, user-friendly applications across various sectors, including healthcare, education, supply chain, and logistics.</p>
+      <p class="text-[15px] text-gray-400">
+        {{ $t('message.skillDescription') }}
+      </p>
       <ul class="mt-4">
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">

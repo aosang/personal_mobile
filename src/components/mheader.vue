@@ -13,43 +13,52 @@
     position="right"
     :style="{ height: '100%', width: '240px', backgroundColor: '#fffbf5' }"
   >
-    <label class="text-[16px] pl-4 font-bold h-[40px] border-b border-gray-100 flex items-center">Navigation</label>
+    <label class="text-[16px] pl-4 font-bold h-[40px] border-b border-gray-100 flex items-center">{{ $t('message.navigation') }}</label>
     <nav class="w-full h-[40px] border-b border-gray-100 text-[15px]">
       <div class="w-full h-[40px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/')">
         <v-icon name="md-home-round" class="w-5 h-5 text-gray-500 mr-1" />
-        <span class="mt-[2px]">Home</span>
+        <span class="mt-[2px]">{{ $t('message.navhome') }}</span>
       </div>
       <div class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/product')">
         <v-icon name="fa-microsoft" class="w-5 h-5 text-gray-500 mr-1" />
-        <span class="mt-[2px]">Product</span>
+        <span class="mt-[2px]">{{ $t('message.navproduct') }}</span>
       </div>
       <div class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/about')">
         <v-icon name="md-textsnippet" class="w-5 h-5 text-gray-500 mr-1" />
-        <span class="mt-[2px]">About</span>
+        <span class="mt-[2px]">{{ $t('message.navabout') }}</span>
       </div>
       <div class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/mtool')">
         <v-icon name="fa-tools" class="w-5 h-5 text-gray-500 mr-1" />
-        <span class="mt-[2px]">Mtool</span>
+        <span class="mt-[2px]">{{ $t('message.navmtool') }}</span>
       </div>
     </nav>
     
     <nav class="mt-[160px]">
-      <label class="text-[16px] pl-4 font-bold h-[40px] border-b border-gray-100 flex items-center">Social Media</label>
-      <div class="h-[48px] border-b border-gray-100 flex items-center pl-4">
+      <label class="text-[16px] pl-4 font-bold h-[40px] border-b border-gray-100 flex items-center">{{ $t('message.socialMedia') }}</label>
+      <div 
+        class="h-[48px] border-b border-gray-100 flex items-center pl-4"
+        @click="openSocialLink('mailto:xiaoge2071@gmail.com')"
+      >
         <img class="w-[18px] h-[18px] mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" />
-        <span class="text-[15px] mt-[2px]">Email</span>
+        <span class="text-[15px] mt-[2px]">{{ $t('message.socialmail') }}</span>
       </div>
-      <div class="h-[48px] border-b border-gray-100 flex items-center pl-4">
+      <!-- <div class="h-[48px] border-b border-gray-100 flex items-center pl-4">
         <img class="w-[16px] h-[16px] mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
         <span class="text-[15px] mt-[2px]">Twitter</span>
-      </div>
-      <div class="h-[48px] border-b border-gray-100 flex items-center pl-4 ">
+      </div> -->
+      <div 
+        class="h-[48px] border-b border-gray-100 flex items-center pl-4 "
+        @click="openSocialLink('https://www.linkedin.com/in/miles-wang-1b945313a')"
+      >
         <img class="w-[18px] h-[18px] mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
-        <span class="text-[15px] mt-[2px]">Linkedin</span>
+        <span class="text-[15px] mt-[2px]">{{ $t('message.sociallinkedin') }}</span>
       </div>
-      <div class="h-[48px] border-b border-gray-100 flex items-center pl-4">
+      <div 
+        class="h-[48px] border-b border-gray-100 flex items-center pl-4"
+        @click="openSocialLink('https://www.wangle.run/images/myImage/myWebsite/myQrcode.png')"
+      >
         <v-icon name="co-wechat" class="-ml-1 mr-1 text-green-600 w-[26px] h-[26px]" />
-        <span class="text-[15px] mt-[2px]">Wechat</span>
+        <span class="text-[15px] mt-[2px]">{{ $t('message.socialwechat') }}</span>
       </div>
     </nav>
   </van-popup>
@@ -70,6 +79,10 @@ const toggleSlideShow = () => {
 const goToPage = (path) => {
   router.push(path)
   slideShow.value = false
+}
+
+const openSocialLink = (link) => {
+  window.open(link, '_blank')
 }
 </script>
 

@@ -1,52 +1,49 @@
 <template>
   <div class="mt-[50px] mb-[48px] p-4">
     <div v-show="active === 0">
-      <h3 class="text-[15px] text-gray-400 mb-3">
-        As an engineer with five years of experience in front-end development
-        and three years in full-stack development, I have collaborated with many
-        talented and diverse teams of developers and designers. We have
-        delivered high-quality, user-friendly applications across various
-        sectors, including healthcare, education, supply chain, and logistics. I
-        have extensive development experience focused on businesses upstream and
-        downstream of supply chains.
-      </h3>
-      <img src="@/assets/common/feday2024.jpg" alt="" class="w-full mb-4" />
-      <h3 class="text-[15px] text-gray-400 mb-3">
-        I am proficient in using Next.js, Tailwind CSS, Node.js, MongoDB, and
-        Supabase to build application solutions for diverse scenarios.
-      </h3>
-      <h3 class="text-[15px] text-gray-400 mb-3">
-        Furthermore, I am passionate about sharing industry knowledge and
-        experience within the open-source community and frequently participate
-        in offline technical conferences.
-      </h3>
-      <van-divider
-        content-position="center"
-        class="font-bold"
-        style="color: #000; font-size: 16px"
-        >Technology stack</van-divider
-      >
-      <h3 class="text-[15px] text-gray-400 mb-1">
-        <span class="font-bold">·Front-end:</span> <br />Vue3、React、Tailwind
-        Css、TypeScript
-      </h3>
-      <h3 class="text-[15px] text-gray-400 mb-1">
-        <span class="font-bold">·Full stack:</span>
-        <br />Next.js、Nodejs、Supabase、MongoDB
-      </h3>
-      <h3 class="text-[15px] text-gray-400 mb-1">
-        <span class="font-bold">·Design:</span> <br />Figma、Photoshop
-      </h3>
-      <h3 class="text-[15px] text-gray-400 mb-1">
-        Proficient in English as an AI developer and user skilled in using AI
-        tools like cursor and dev0.
-      </h3>
-
-      <img
-        src="@/assets/common/skills.png"
-        alt="skills"
-        class="w-full mt-4 rounded-[10px] border border-gray-200"
-      />
+      <template v-if="locale === 'en'">
+        <h3 class="text-[15px] text-gray-400 mb-3">
+          {{ $t('message.aboutIntroductionDetails1') }}
+        </h3>
+        <img src="@/assets/common/feday2024.jpg" alt="" class="w-full mb-4" />
+        <h3 class="text-[15px] text-gray-400 mb-3">
+          {{ $t('message.aboutIntroductionDetails2') }}
+        </h3>
+        <h3 class="text-[15px] text-gray-400 mb-3">
+          {{ $t('message.aboutIntroductionDetails3') }}
+        </h3>
+        <van-divider
+          content-position="center"
+          class="font-bold"
+          style="color: #000; font-size: 16px"
+        >
+          {{ $t('message.aboutTechnologyStack') }}
+        </van-divider
+        >
+        <h3 class="text-[15px] text-gray-400 mb-1">
+          <span class="font-bold">·{{ $t('message.aboutTechnologyStackFrontend') }}</span> <br />Vue3、React、Tailwind
+          Css、TypeScript
+        </h3>
+        <h3 class="text-[15px] text-gray-400 mb-1">
+          <span class="font-bold">·{{ $t('message.aboutTechnologyStackFullstack') }}</span>
+          <br />Next.js、Nodejs、Supabase、MongoDB
+        </h3>
+        <h3 class="text-[15px] text-gray-400 mb-1">
+          <span class="font-bold">·{{ $t('message.aboutTechnologyStackDesign') }}</span> <br />Figma、Photoshop
+        </h3>
+        <h3 class="text-[15px] text-gray-400 mb-1">
+          Proficient in English as an AI developer and user skilled in using AI
+          tools like cursor and dev0.
+        </h3>
+        <img
+          src="@/assets/common/skills.png"
+          alt="skills"
+          class="w-full mt-4 rounded-[10px] border border-gray-200"
+        />
+      </template>
+      <template v-if="locale === 'zh'">
+        <div>123</div>
+      </template>
     </div>
     <div v-show="active === 1">
       <img src="@/assets/common/working.jpg" alt="working" class="w-full mb-4 rounded-[10px] border border-gray-200" />
@@ -115,15 +112,18 @@
 
 <script setup>
 import { ref } from "vue";
+import { useI18n } from 'vue-i18n'
 
+const { locale } = useI18n()
 const active = ref(0);
+
 const tabs = ref([
   {
     id: 0,
-    title: "Introduction",
+    title: locale.value === 'en' ? "Introduction" : "自我简介",
   },{
     id: 1,
-    title: "Work Experience",
+    title: locale.value === 'en' ? "Work Experience" : "工作经历",
   },
 ]);
 
