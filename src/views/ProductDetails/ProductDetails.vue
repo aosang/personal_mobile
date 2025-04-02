@@ -1,7 +1,7 @@
 <template>
-  <div class="product-details p-2 ">
+  <div class="product-details p-4 ">
     <van-divider position="center">
-      <div class="text-gray-600 text-[16px] font-bold">{{productName}}</div>
+      <div class="text-gray-600 text-[16px] font-bold">{{locale === 'en' ? productName : productNameCn}}</div>
     </van-divider>
     <van-swipe :autoplay="4000" :show-indicators="true">
       <van-swipe-item v-for="item in imageList" :key="item">
@@ -18,7 +18,7 @@
      </van-tag>
     </div>
     <p class="text-gray-500 text-[15px] mt-3">
-      {{description}}
+      {{locale === 'en' ? description : productFullDescription}}
     </p>
   </div>
 </template>
@@ -28,6 +28,8 @@ import { onMounted, onUnmounted, reactive, ref} from 'vue'
 import { useRoute } from 'vue-router'
 import productData from './productData.json'
 import { showToast } from 'vant'
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
 
 const route = useRoute()
 const productId = ref(null)
@@ -35,6 +37,8 @@ const dataDetails = reactive({})
 
 const description = ref('')
 const productName = ref('')
+const productNameCn = ref('')
+const productFullDescription = ref('')
 const techTages = ref([])
 const imageList = ref([])
 
@@ -46,6 +50,8 @@ onMounted(() => {
     imageList.value = dataDetails.value.imageSrc
     description.value = dataDetails.value.description
     productName.value = dataDetails.value.name
+    productNameCn.value = dataDetails.value.nameCn
+    productFullDescription.value = dataDetails.value.fullDescription
     techTages.value = dataDetails.value.technologies
   } else {
     showToast('未找到ID参数')

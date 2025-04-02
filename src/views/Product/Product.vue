@@ -6,7 +6,7 @@
           <img src="@/assets/product/logo_assets.png" alt="assets" class="w-[80%] mx-auto">
         </div>
         <div class="px-4 py-2">
-          <h2 class="text-[16px] font-bold">Ops Monitoring Platform</h2>
+          <h2 class="text-[16px] font-bold">{{ $t('message.productTitle') }}</h2>
           <p class="text-[14px] text-gray-500 mb-2" 
           style="
             word-break: break-word; 
@@ -16,7 +16,7 @@
             overflow: hidden; 
             text-overflow: ellipsis"
           >
-            Real-time monitoring of network devices, servers, and virtualization parameters, collecting millions of metrics, providing flexible alert thresholds and alarm mechanisms for quick fault detection.
+            {{ $t('message.productDescription') }}
           </p>
 
           <div class="flex flex-wrap">
@@ -31,7 +31,7 @@
             class="mb-2"
             color="#000"
           >
-            View More
+            {{ $t('message.productLinkText') }}
           </van-button>
         </div>
       </li>
@@ -41,7 +41,7 @@
           <img src="@/assets/product/logo_freight.png" alt="assets" class="w-[80%] mx-auto">
         </div>
         <div class="px-4 py-2">
-          <h2 class="text-[16px] font-bold">Online Quotation System</h2>
+          <h2 class="text-[16px] font-bold">{{ $t('message.productTitle2') }}</h2>
           <p class="text-[14px] text-gray-500 mb-2" 
           style="
             word-break: break-word; 
@@ -51,7 +51,7 @@
             overflow: hidden; 
             text-overflow: ellipsis"
           >
-            This is clearly a B2B international shipping/freight forwarding platform that helps businesses arrange cargo transport between China and international destinations.
+            {{ $t('message.productDescription2') }}
           </p>
           <div class="flex flex-wrap">
             <van-tag size="medium" class="mr-2 mb-3" text-color="#6b7280" color="#e5e7eb">Vue.js</van-tag>
@@ -65,17 +65,17 @@
             class="mb-2 block"
             color="#000"
           >
-            View More
+            {{ $t('message.productLinkText') }}
           </van-button>
         </div>
       </li>
 
       <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(3)">
         <div class="overflow-hidden bg-[#f3f4f6] h-[100px] flex items-center justify-center">
-          <img src="@/assets/product/logo_freight.png" alt="assets" class="w-[80%] mx-auto">
+          <img src="@/assets/product/shipping_mobile.png" alt="assets" class="w-[80%] mx-auto">
         </div>
         <div class="px-4 py-2">
-          <h2 class="text-[16px] font-bold">Shipping Quote Mobile</h2>
+          <h2 class="text-[16px] font-bold">{{ $t('message.productTitle3') }}</h2>
           <p class="text-[14px] text-gray-500 mb-2" 
           style="
             word-break: break-word; 
@@ -85,7 +85,7 @@
             overflow: hidden; 
             text-overflow: ellipsis"
           >
-            The Shipping Quote Mobile App is a powerful and user-friendly tool designed to streamline ocean freight rate inquiries and shipping cost estimations. Whether you are a freight forwarder, importer, exporter, or logistics provider, this app enables you to get instant and accurate shipping quotes anytime, anywhere.
+            {{ $t('message.productDescription3') }}
           </p>
 
           <div class="flex flex-wrap">
@@ -99,7 +99,7 @@
             class="mb-2 block"
             color="#000"
           >
-            View More
+            {{ $t('message.productLinkText') }}
           </van-button>
         </div>
       </li>
@@ -109,7 +109,7 @@
           <img src="@/assets/product/logo_echemi.png" alt="assets" class="w-[80%] mx-auto">
         </div>
         <div class="px-4 py-2">
-          <h2 class="text-[16px] font-bold">Echemi.com</h2>
+          <h2 class="text-[16px] font-bold">{{ $t('message.productTitle4') }}</h2>
           <p class="text-[14px] text-gray-500 mb-2" 
           style="
             word-break: break-word; 
@@ -119,7 +119,7 @@
             overflow: hidden; 
             text-overflow: ellipsis"
           >
-            Digital marketplace connecting chemical suppliers and buyers worldwide.
+            {{ $t('message.productDescription4') }}
           </p>
           <div class="flex flex-wrap">
             <van-tag size="medium" class="mr-2 mb-3" text-color="#6b7280" color="#e5e7eb">B2B</van-tag>
@@ -132,7 +132,7 @@
             class="mb-2 block"
             color="#000"
           >
-            View More
+            {{ $t('message.productLinkText') }}
           </van-button>
         </div>
       </li>

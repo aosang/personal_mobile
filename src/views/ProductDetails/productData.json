@@ -1,6 +1,7 @@
 [{
   "id": 1,
   "name": "Ops Monitoring Platform",
+  "nameCn": "运维管理监控平台",
   "description": "Real-time monitoring of network devices, servers, and virtualization parameters, collecting millions of metrics, providing flexible alert thresholds and alarm mechanisms for quick fault detection.",
   "fullDescription": "基于Zabbix的分布式运维解决方案，实时监控网络设备、服务器、虚拟化等运行参数，采集百万级监控指标，提供灵活的告警阈值和报警机制，快速定位故障设备。",
   "technologies": ["React.js", "Zabbix", "Tailwind CSS", "Typescript"],
@@ -15,6 +16,7 @@
 }, {
   "id": 2,
   "name": "Online Quotation System",
+  "nameCn": "海运在线报价系统",
   "description": "This is clearly a B2B international shipping/freight forwarding platform that helps businesses arrange cargo transport between China and international destinations.",
   "fullDescription": "航运报价管理系统是一个为航运公司设计的综合平台，用于向客户提供准确的报价集中化费率管理，客户特定定价，自动在线计算，客户沟通管理",
   "technologies": ["Vue.js", "Sass", "JavaScript", "Vuex", "Vue-Router"],
@@ -31,6 +33,7 @@
 }, {
   "id": 3,
   "name": "Shipping Quote Mobile",
+  "nameCn": "海运在线报价移动端",
   "description": "The Shipping Quote Mobile App is a powerful and user-friendly tool designed to streamline ocean freight rate inquiries and shipping cost estimations. Whether you are a freight forwarder, importer, exporter, or logistics provider, this app enables you to get instant and accurate shipping quotes anytime, anywhere.",
   "fullDescription": "即时运费报价，快速获取全球航线的实时海运运费；个性化报价请求，根据货物信息，集装箱类型及运输需求定制精准报价；一键预订与跟踪，从报价到订舱、货运跟踪，全流程高效管理。",
   "technologies": ["Vue.js", "Sass", "JavaScript", "Vuex", "Vue-Router"],
@@ -44,6 +47,7 @@
 }, {
   "id": 4,
   "name": "Echemi.com",
+  "nameCn": "Echemi化工平台",
   "description": "Digital marketplace connecting chemical suppliers and buyers worldwide.",
   "fullDescription": "Echemi.com连接全球化学品供应商和买家，简化采购流程，同时确保全球化学品贸易的合规性、安全性和效率。主要功能包括，供应商-买家匹配系统，产品目录和规格管理，定价和交易管理，法规合规和文档管理，供应链可视化，质量保证和风险管理，市场情报",
   "technologies": ["B2B", "Nuxt.js", "E-commerce"],

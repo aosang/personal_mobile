@@ -15,10 +15,6 @@ export const messages = {
       socialmail: 'Email',
       socialwechat: 'Wechat',
       sociallinkedin: 'Linkedin',
-
-      aboutIntroductionDetails1: "As an engineer with five years of experience in front-end development and three years in full-stack development, I have collaborated with many talented and diverse teams of developers and designers. We have delivered high-quality, user-friendly applications across various sectors, including healthcare, education, supply chain, and logistics. I have extensive development experience focused on businesses upstream and downstream of supply chains.",
-      aboutIntroductionDetails2: "I am proficient in using Next.js, Tailwind CSS, Node.js, MongoDB, and Supabase to build application solutions for diverse scenarios.",
-      aboutIntroductionDetails3: "Furthermore, I am passionate about sharing industry knowledge and experience within the open-source community and frequently participate in offline technical conferences.",
     
       aboutTechnologyStack: 'Technology stack',
       aboutTechnologyStackFrontend: 'Front-end',
@@ -27,7 +23,28 @@ export const messages = {
 
       aboutTechnologyStackFrontendDetails: 'Vue3、React、Tailwind Css、TypeScript',
       aboutTechnologyStackFullstackDetails: 'Next.js、Nodejs、Supabase、MongoDB',
-      aboutTechnologyStackDesignDetails: 'Figma、Photoshop'
+      aboutTechnologyStackDesignDetails: 'Figma、Photoshop',
+
+      productTitle: 'Ops Monitoring Platform',
+      productSubtitle: 'Distributed Operations and Maintenance Solution Based on Zabbix',
+      productDescription: 'Real-time monitoring of network devices, servers, and virtualization parameters, collecting millions of metrics with flexible alert thresholds and alarm mechanisms.',
+      productLink: '',
+      productLinkText: 'View More',
+
+      productTitle2: 'Online Quotation System',
+      productSubtitle2: 'Ocean Freight Quotation System',
+      productDescription2: 'Streamlined solution for shipping companies to manage and deliver accurate quotations to clients.',
+      productLink2: '',
+
+      productTitle3: 'Shipping Quote Mobile',
+      productSubtitle3: '',
+      productDescription3: 'The Shipping Quote Mobile App is a powerful and user-friendly tool designed to streamline ocean freight rate inquiries and shipping cost estimations.',
+      productLink3: '',
+
+      productTitle4: 'Echemi.com',
+      productSubtitle4: 'Online B2B Platform to Buy and Sell Chemical Products',
+      productDescription4: 'Digital marketplace connecting chemical suppliers and buyers worldwide.',
+      productLink4: '',
     }
   },
   zh: {
@@ -57,6 +74,21 @@ export const messages = {
       aboutTechnologyStackFullstackDetails: 'Next.js、Nodejs、Supabase、MongoDB',
       aboutTechnologyStackDesignDetails: 'Figma、Photoshop',
 
+      productTitle: '运维管理监控平台',
+      productDescription: '基于Zabbix的分布式运维解决方案',
+      productLinkText: '查看更多',
+
+      productTitle2: '海运在线报价系统',
+      productDescription2: '海运物流行业的报价系统，支持在线计算，报价等操作',
+      productLink2: '',
+
+      productTitle3: '海运在线报价移动端',
+      productDescription3: '海运物流行业的移动端小程序',
+      productLink3: '',
+      
+      productTitle4: 'Echemi化工平台',
+      productDescription4: '在线B2B平台，帮助平台买家分析市场并采购高质量的化学品',
+      productLink4: '',
     }
   }
 }
