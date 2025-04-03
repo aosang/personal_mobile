@@ -118,7 +118,7 @@
       </template>
 
       <template v-if="locale === 'zh'">
-        <van-steps direction="vertical">
+        <van-steps direction="vertical" class="custom-steps">
           <van-step>
             <h3 class="text-[15px] text-gray-400 mb-1 font-bold">嘉智科技</h3>
             <span class="text-[15px] text-gray-400 mb-1 block font-bold">2021年4月 - 至今&nbsp;&nbsp;&nbsp;&nbsp;全栈开发工程师</span>
@@ -136,7 +136,7 @@
           </van-step>
         </van-steps>
         <div class="text-[15px] text-gray-600 mb-1 mt-4 underline">
-            如果您对我的工作经历感兴趣，请点击<a href="https://www.wangle.run/Miles-Resume.pdf" target="_blank" class="text-blue-500 text-[15px] font-bold">获取Miles的简历</a>查看并了解更多信息。
+            如果您对我的工作经历感兴趣，请点击<a href="https://www.wangle.run/miles_cn.pdf" target="_blank" class="text-blue-500 text-[15px] font-bold">获取Miles的简历</a>查看并了解更多信息。
         </div>
       </template>
     </div>
@@ -182,7 +182,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, watch } from "vue"
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 const { locale } = useI18n()
@@ -197,6 +197,19 @@ const tabs = ref([
     title: locale.value === 'en' ? "Work Experience" : "工作经历",
   },
 ]);
+
+// 监听locale变化，更新tabs标题
+watch(locale, (newLocale) => {
+  tabs.value = [
+    {
+      id: 0,
+      title: newLocale === 'en' ? "Introduction" : "自我简介",
+    },{
+      id: 1,
+      title: newLocale === 'en' ? "Work Experience" : "工作经历",
+    },
+  ]
+})
 
 const handleTabClick = (id) => {
   active.value = id
@@ -223,5 +236,9 @@ onUnmounted(() => {
   display: block;
   position: relative;
   top: 50px;
+}
+
+::v-deep(.van-steps) {
+  background: transparent;
 }
 </style>

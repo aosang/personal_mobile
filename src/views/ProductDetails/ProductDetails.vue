@@ -5,7 +5,9 @@
     </van-divider>
     <van-swipe :autoplay="4000" :show-indicators="true">
       <van-swipe-item v-for="item in imageList" :key="item">
-        <img :src="item" alt="product image" class="w-full h-full">
+        <van-skeleton title avatar :row="3" :loading="isLoading">
+          <img :src="item" alt="product image" class="w-full h-full">
+        </van-skeleton>
       </van-swipe-item>
     </van-swipe>
     <div class="mt-3 flex flex-wrap gap-2">
@@ -17,9 +19,19 @@
       {{item}}
      </van-tag>
     </div>
-    <p class="text-gray-500 text-[15px] mt-3">
+    <p class="text-gray-500 text-[15px] mt-3 mb-3">
       {{locale === 'en' ? description : productFullDescription}}
     </p>
+    
+    <van-button 
+      v-if="productLink"
+      class="block"
+      color="#000"
+      size="small"
+      @click="handleClickWebsite"
+    >
+      {{ locale === 'en' ? 'Visit website' : '网站访问' }}
+    </van-button>
   </div>
 </template>
 
@@ -39,8 +51,15 @@ const description = ref('')
 const productName = ref('')
 const productNameCn = ref('')
 const productFullDescription = ref('')
+const productLink = ref('')
+const isLoading = ref(true)
+
 const techTages = ref([])
 const imageList = ref([])
+
+const handleClickWebsite = () => {
+  window.open(productLink.value, '_blank')
+}
 
 onMounted(() => {
   document.body.style.height = 'calc(100vh - 50px)'
@@ -53,6 +72,8 @@ onMounted(() => {
     productNameCn.value = dataDetails.value.nameCn
     productFullDescription.value = dataDetails.value.fullDescription
     techTages.value = dataDetails.value.technologies
+    productLink.value = dataDetails.value.previewUrl
+    isLoading.value = false
   } else {
     showToast('未找到ID参数')
   }

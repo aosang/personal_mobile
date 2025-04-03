@@ -36,7 +36,7 @@
   "nameCn": "海运在线报价移动端",
   "description": "The Shipping Quote Mobile App is a powerful and user-friendly tool designed to streamline ocean freight rate inquiries and shipping cost estimations. Whether you are a freight forwarder, importer, exporter, or logistics provider, this app enables you to get instant and accurate shipping quotes anytime, anywhere.",
   "fullDescription": "即时运费报价，快速获取全球航线的实时海运运费；个性化报价请求，根据货物信息，集装箱类型及运输需求定制精准报价；一键预订与跟踪，从报价到订舱、货运跟踪，全流程高效管理。",
-  "technologies": ["Vue.js", "Sass", "JavaScript", "Vuex", "Vue-Router"],
+  "technologies": ["Vue.js", "JavaScript", "Pinia", "Uni-app"],
   "posterSrc": "https://www.wangle.run/company_icon/public_image/myweb/freight_rate.png",
   "videoSrc": "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4",
   "previewUrl": "",

@@ -13,7 +13,7 @@ import { messages } from './locale/locale.js'
 // 创建i18n实例
 const i18n = createI18n({
   legacy: false,
-  locale: localStorage.getItem('language') || 'en',
+  locale: localStorage.getItem('language') || 'zh',
   fallbackLocale: 'en',
   messages: messages,
 })
@@ -33,7 +33,7 @@ const switchLanguage = (lang) => {
 }
 
 // 初始化语言设置
-const savedLanguage = localStorage.getItem('language') || 'en'
+const savedLanguage = localStorage.getItem('language') || 'zh'
 switchLanguage(savedLanguage)
 
 import { 
@@ -49,7 +49,8 @@ import {
   CellGroup,
   Swipe,
   SwipeItem,
-  FloatingBubble 
+  FloatingBubble,
+  Skeleton
 } from 'vant'
 import 'vant/lib/index.css'
 
@@ -96,6 +97,8 @@ app.use(CellGroup)
 app.use(Swipe)
 app.use(SwipeItem)
 app.use(FloatingBubble )
+app.use(Skeleton)
+
 app.use(i18n)
 app.config.globalProperties.$switchLanguage = switchLanguage
 

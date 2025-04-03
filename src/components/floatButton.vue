@@ -1,15 +1,26 @@
 <template>
-  <div>
-    <van-floating-bubble  
-      axis="xy" 
-      magnetic="x"
+  <div class="
+    fixed 
+    bottom-[24px] 
+    right-[16px]
+    w-[50px] 
+    h-[50px]
+    bg-blue-500 
+    rounded-full
+    shadow-lg
+    flex 
+    items-center 
+    justify-center
+    text-white
+  ">
+    <div  
       @click="switchLanguage"
     >
       <v-icon 
         name="bi-translate" 
         class="w-[26px] h-[26px]"
       />
-    </van-floating-bubble>
+  </div>
   </div>
 </template>
 
