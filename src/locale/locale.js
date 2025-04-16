@@ -45,6 +45,26 @@ export const messages = {
       productSubtitle4: 'Online B2B Platform to Buy and Sell Chemical Products',
       productDescription4: 'Digital marketplace connecting chemical suppliers and buyers worldwide.',
       productLink4: '',
+
+      mtoolsDeveloperDescription1: 'Vue 2.0 based component library for developers, designers and product managers',
+      mtoolsDeveloperDescription2: "Building beautiful products more flexible and working with happiness",
+      mtoolsDeveloperDescription3: "Build your component library",
+      mtoolsDeveloperDescription4: "Extensible enterprise-level front-end application framework",
+      mtoolsDeveloperDescription5: "Payment processing for internet businesses",
+      mtoolsDeveloperDescription6: "Database, authentication, and storage services",
+  
+      mtoolsDesignerDescription1: "Color palette website",
+      mtoolsDesignerDescription2: "Discover the world’s top designers",
+      mtoolsDesignerDescription3: "Stunning royalty-free images & royalty-free stock",
+  
+      mtoolsOtherDescription1: "Screen capture and screen recording tool",
+      mtoolsOtherDescription2: "File type conversion platform",
+      mtoolsOtherDescription3: "Image lossless compression",
+      mtoolsOtherDescription4: "Free online library",
+
+      mtoolsTitle1: 'Developer',
+      mtoolsTitle2: 'Designer',
+      mtoolsTitle3: 'Other',
     }
   },
   zh: {
@@ -89,6 +109,26 @@ export const messages = {
       productTitle4: 'Echemi化工平台',
       productDescription4: '在线B2B平台，帮助平台买家分析市场并采购高质量的化学品',
       productLink4: '',
+
+      mtoolsDeveloperDescription1: "基于Vue.js的桌面端组件库",
+      mtoolsDeveloperDescription2: "React组件库，注重设计细节和开发体验",
+      mtoolsDeveloperDescription3: "可定制的React组件库",
+      mtoolsDeveloperDescription4: "前端应用框架，集成路由、构建和插件体系",
+      mtoolsDeveloperDescription5: "跨境在线支付，支持全球交易",
+      mtoolsDeveloperDescription6: "数据库、认证和存储服务",
+
+      mtoolsDesignerDescription1: "设计配色网站",
+      mtoolsDesignerDescription2: "设计参考平台",
+      mtoolsDesignerDescription3: "高质量免费图片网站",
+
+      mtoolsOtherDescription1: "屏幕截图和屏幕录制工具",
+      mtoolsOtherDescription2: "文件类型转换平台",
+      mtoolsOtherDescription3: "图片无损压缩",
+      mtoolsOtherDescription4: "免费在线图书馆",
+
+      mtoolsTitle1: '开发',
+      mtoolsTitle2: '设计',
+      mtoolsTitle3: '其他',
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="p-6 mt-[50px]">
     <div class="flex items-center">
-      <div class="w-[100px] h-[100px] bg-red-500 rounded-[20px] overflow-hidden">
+      <div class="w-[100px] h-[100px] rounded-[20px] overflow-hidden">
         <img src="https://www.wangle.run/images/myImage/myWebsite/my_avatar.png" alt="avatar" class="w-full h-full object-cover" />
         <!-- <img src="https://www.wangle.run/company_icon/public_image/pub_avatar.jpg" alt="avatar" class="w-full h-full object-cover" /> -->
       </div>

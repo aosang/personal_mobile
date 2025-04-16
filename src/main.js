@@ -18,6 +18,20 @@ const i18n = createI18n({
   messages: messages,
 })
 
+// PC端检测并跳转
+const checkAndRedirectForPC = () => {
+  // 检测是否为移动设备
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  
+  // 如果不是移动设备（即PC端），则跳转
+  if (!isMobile) {
+    window.location.href = 'https://www.wangle.run/mywebsite/personalpc';
+  }
+}
+
+// 执行PC端检测
+checkAndRedirectForPC();
+
 // 创建语言切换函数
 const switchLanguage = (lang) => {
   // 切换vue-i18n语言

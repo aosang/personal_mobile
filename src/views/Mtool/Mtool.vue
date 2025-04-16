@@ -1,11 +1,11 @@
 <template>
   <div class="p-2 mt-[50px]">
-    <van-cell-group>
+    <van-cell-group class="mt-[-10px]">
       <template #title>
         <div class="flex items-center">
           <van-tag type="primary" size="large">
             <v-icon name="md-build-round" class="w-[14px] h-[14px]" />
-            Developer
+            {{ $t('message.mtoolsTitle1') }}
           </van-tag>
         </div>
       </template>
@@ -15,7 +15,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Vue 2.0 based component library for developers, designers and product managers
+            {{ $t('message.mtoolsDeveloperDescription1') }}
           </div>
         </template>
         <template #value>
@@ -30,7 +30,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Building beautiful products more flexible and working with happiness
+            {{ $t('message.mtoolsDeveloperDescription2') }}
           </div>
         </template>
         <template #value>
@@ -45,7 +45,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Build your component library
+            {{ $t('message.mtoolsDeveloperDescription3') }}
           </div>
         </template>
         <template #value>
@@ -60,7 +60,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Extensible enterprise-level front-end application framework
+            {{ $t('message.mtoolsDeveloperDescription4') }}
           </div>
         </template>
         <template #value>
@@ -75,7 +75,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Payment processing for internet businesses
+            {{ $t('message.mtoolsDeveloperDescription5') }}
           </div>
         </template>
         <template #value>
@@ -90,7 +90,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Database, authentication, and storage services
+            {{ $t('message.mtoolsDeveloperDescription6') }}
           </div>
         </template>
         <template #value>
@@ -107,7 +107,7 @@
         <div class="flex items-center">
           <van-tag type="success" size="large">
             <v-icon name="md-designservices" class="w-[14px] h-[14px]" />
-            Designer
+            {{ $t('message.mtoolsTitle2') }}
           </van-tag>
         </div>
       </template>
@@ -117,7 +117,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Color palette website
+            {{ $t('message.mtoolsDesignerDescription1') }}
           </div>
         </template>
         <template #value>
@@ -132,7 +132,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Discover the world’s top designers
+            {{ $t('message.mtoolsDesignerDescription2') }}
           </div>
         </template>
         <template #value>
@@ -147,7 +147,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Stunning royalty-free images & royalty-free stock
+            {{ $t('message.mtoolsDesignerDescription3') }}
           </div>
         </template>
         <template #value>
@@ -164,7 +164,7 @@
         <div class="flex items-center">
           <van-tag type="warning" size="large">
             <v-icon name="md-otherhouses-sharp" class="w-[14px] h-[14px]" />
-            Others
+            {{ $t('message.mtoolsTitle3') }}
           </van-tag>
         </div>
       </template>
@@ -174,7 +174,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Screen capture and screen recording tool
+            {{ $t('message.mtoolsOtherDescription1') }}
           </div>
         </template>
         <template #value>
@@ -189,7 +189,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            File type conversion platform
+            {{ $t('message.mtoolsOtherDescription2') }}
           </div>
         </template>
         <template #value>
@@ -204,7 +204,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Image lossless compression
+            {{ $t('message.mtoolsOtherDescription3') }}
           </div>
         </template>
         <template #value>
@@ -219,7 +219,7 @@
         </template>
         <template #label>
           <div class="text-gray-500 w-[300px] text-[13px]">
-            Free online library
+            {{ $t('message.mtoolsOtherDescription4') }}
           </div>
         </template>
         <template #value>
@@ -233,6 +233,7 @@
 </template>
 
 <script setup>
+
 
 const goToPage = (url) => {
   window.open(url, '_blank')
