@@ -45,7 +45,7 @@
           <div class="text-[16px] text-gray-600 font-bold">我是谁</div>
         </van-divider>
         <h3 class="text-[15px] text-gray-400 mb-3 leading-[26px]">
-          Hi，我是Miles，一名35+的前端开发工程师，现居青岛。INTJ（建筑师人格），爱折腾，有较强的自我学习能力，一个意外的机缘巧合入坑前端，既非科班也非培训，属于半路出家， 喜欢这份职业的原因很简单，所见即所得的成就感。2023年完成了CS本科学历的深造，算是小小的弥补了一个遗憾。大约三年前开始尝试全栈开发，希望能够持续打造有出色用户体验的产品，目前就职于一家供应链科技公司，主要负责为集团各公司业务提供技术开发解决方案。
+          Hi，我是Miles，一名35+的前端开发工程师，INTJ（建筑师人格），爱折腾，有较强的自我学习能力，一个意外的机缘巧合入坑前端，既非科班也非培训，属于半路出家， 喜欢这份职业的原因很简单，所见即所得的成就感。2023年完成了CS本科学历的深造，算是小小的弥补了一个遗憾。大约三年前开始尝试全栈开发，希望能够持续打造有出色用户体验的产品，目前就职于一家供应链科技公司，主要负责为集团各公司业务提供技术开发解决方案。
         </h3>
         <img src="@/assets/common/feday2024.jpg" alt="" class="w-full mb-4" />
         <van-divider content-position="center">
@@ -94,7 +94,7 @@
     </div>
 
     
-    <!-- <div v-show="active === 0">
+    <div v-show="active === 0">
       <template v-if="locale === 'en'">
         <h3 class="text-[15px] text-gray-400 mb-3">
           As an engineer with five years of experience in front-end development and three years in full-stack development, I have collaborated with many talented and diverse teams of developers and designers. We have delivered high-quality, user-friendly applications across various sectors, including healthcare, education, supply chain, and logistics. I have extensive development experience focused on businesses upstream and downstream of supply chains.
@@ -185,8 +185,8 @@
           感谢你能看到这里，在一个碎片化的时代能有耐心听我啰嗦这么多，如果有任何问题，合作或其他想要沟通交流的，都可以给我留言。
         </h3>
       </template>
-    </div> -->
-    <!-- <div v-show="active === 1">
+    </div>
+    <div v-show="active === 1">
       <img src="@/assets/common/working.jpg" alt="working" class="w-full mb-4 rounded-[10px] border border-gray-200" />
       <template v-if="locale === 'en'">
         <van-steps direction="vertical">
@@ -233,9 +233,9 @@
             如果您对我的工作经历感兴趣，请点击<a href="https://www.wangle.run/miles_cn.pdf" target="_blank" class="text-blue-500 text-[15px] font-bold">获取Miles的简历</a>查看并了解更多信息。
         </div>
       </template>
-    </div> -->
+    </div>
   </div>
-  <!-- <div
+  <div
     class="
     fixed 
     left-0 
@@ -272,7 +272,7 @@
     >
       {{ tab.title }}
     </div>
-  </div> -->
+  </div>
   <div class="w-full h-[60px]"></div>
 </template>
 
@@ -283,32 +283,32 @@ import { useRouter } from 'vue-router'
 const { locale } = useI18n()
 const active = ref(0);
 const router = useRouter()
-// const tabs = ref([
-//   {
-//     id: 0,
-//     title: locale.value === 'en' ? "Introduction" : "自我简介",
-//   },{
-//     id: 1,
-//     title: locale.value === 'en' ? "Work Experience" : "工作经历",
-//   },
-// ])
+const tabs = ref([
+  {
+    id: 0,
+    title: locale.value === 'en' ? "Introduction" : "自我简介",
+  },{
+    id: 1,
+    title: locale.value === 'en' ? "Work Experience" : "工作经历",
+  },
+])
 
 // 监听locale变化，更新tabs标题
-// watch(locale, (newLocale) => {
-//   tabs.value = [
-//     {
-//       id: 0,
-//       title: newLocale === 'en' ? "Introduction" : "自我简介",
-//     },{
-//       id: 1,
-//       title: newLocale === 'en' ? "Work Experience" : "工作经历",
-//     },
-//   ]
-// })
+watch(locale, (newLocale) => {
+  tabs.value = [
+    {
+      id: 0,
+      title: newLocale === 'en' ? "Introduction" : "自我简介",
+    },{
+      id: 1,
+      title: newLocale === 'en' ? "Work Experience" : "工作经历",
+    },
+  ]
+})
 
-// const handleTabClick = (id) => {
-//   active.value = id
-// }
+const handleTabClick = (id) => {
+  active.value = id
+}
 
 const handleClickMtools = () => {
   router.push('/mtool')
