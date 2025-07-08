@@ -78,7 +78,7 @@ export const messages = {
       navproduct: '产品',
       navabout: '关于我',
       navmtool: '工具推荐',
-      navigation: '导航',
+      navigation: '菜单导航',
       socialMedia: '联系我',
 
       socialmail: '邮箱',
@@ -102,7 +102,7 @@ export const messages = {
       productDescription2: '海运物流行业的报价系统，支持在线计算，报价等操作',
       productLink2: '',
 
-      productTitle3: '海运在线报价移动端',
+      productTitle3: '海运在线报价移动端小程序',
       productDescription3: '海运物流行业的移动端小程序',
       productLink3: '',
       

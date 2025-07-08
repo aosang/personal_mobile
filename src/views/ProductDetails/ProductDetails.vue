@@ -23,26 +23,39 @@
       {{locale === 'en' ? description : productFullDescription}}
     </p>
     
-    <van-button 
-      v-if="productLink"
-      class="block"
-      color="#000"
-      size="small"
-      @click="handleClickWebsite"
-    >
-      {{ locale === 'en' ? 'Visit website' : '网站访问' }}
-    </van-button>
+    <div class="flex">
+      <div v-show="productLink" class="mr-3">
+        <van-button
+          color="#000"
+          size="small"
+          @click="handleClickWebsite"
+        >
+         {{ locale === 'en' ? 'Visit website' : '网站访问' }}
+        </van-button>
+      </div>
+      <div>
+        <van-button
+          color="#000"
+          size="small"
+          @click="handleClickBack"
+        >
+          {{ locale === 'en' ? 'Back' : '返回列表' }}
+        </van-button>
+      </div>
+    </div> 
+    
   </div>
 </template>
 
 <script setup>
 import { onMounted, onUnmounted, reactive, ref} from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import productData from './productData.json'
 import { showToast } from 'vant'
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
 
+const router = useRouter()
 const route = useRoute()
 const productId = ref(null)
 const dataDetails = reactive({})
@@ -59,6 +72,10 @@ const imageList = ref([])
 
 const handleClickWebsite = () => {
   window.open(productLink.value, '_blank')
+}
+
+const handleClickBack = () => {
+  router.push('/Product')
 }
 
 onMounted(() => {

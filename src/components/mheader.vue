@@ -13,7 +13,7 @@
     position="right"
     :style="{ height: '100%', width: '240px', backgroundColor: '#fffbf5' }"
   >
-    <label class="text-[16px] pl-4 font-bold h-[40px] border-b border-gray-100 flex items-center">{{ $t('message.navigation') }}</label>
+    <label class="text-[15px] font-bold pl-4 h-[40px] border-b border-gray-100 flex items-center text-[#222]">{{ $t('message.navigation') }}</label>
     <nav class="w-full h-[40px] border-b border-gray-100 text-[15px]">
       <div class="w-full h-[40px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/')">
         <v-icon name="md-home-round" class="w-5 h-5 text-gray-500 mr-1" />
@@ -34,12 +34,12 @@
     </nav>
     
     <nav class="mt-[160px]">
-      <label class="text-[16px] pl-4 font-bold h-[40px] border-b border-gray-100 flex items-center">{{ $t('message.socialMedia') }}</label>
+      <label class="text-[15px] pl-4 font-bold h-[40px] border-b border-gray-100 flex items-center text-[#222]">{{ $t('message.socialMedia') }}</label>
       <div 
         class="h-[48px] border-b border-gray-100 flex items-center pl-4"
         @click="openSocialLink('mailto:xiaoge2071@gmail.com')"
       >
-        <img class="w-[18px] h-[18px] mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" />
+        <img class="w-[18px] h-[18px] mr-2" src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/google-original.svg" />
         <span class="text-[15px] mt-[2px]">{{ $t('message.socialmail') }}</span>
       </div>
       <!-- <div class="h-[48px] border-b border-gray-100 flex items-center pl-4">
@@ -50,7 +50,7 @@
         class="h-[48px] border-b border-gray-100 flex items-center pl-4 "
         @click="openSocialLink('https://www.linkedin.com/in/miles-wang-1b945313a')"
       >
-        <img class="w-[18px] h-[18px] mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+        <img class="w-[18px] h-[18px] mr-2" src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/linkedin-original.svg" />
         <span class="text-[15px] mt-[2px]">{{ $t('message.sociallinkedin') }}</span>
       </div>
       <div 

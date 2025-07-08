@@ -2,8 +2,8 @@
   <div class="p-6 mt-[50px]">
     <ul>
       <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(1)">
-        <div class="overflow-hidden bg-[#f3f4f6] h-[100px] flex items-center justify-center">
-          <img src="@/assets/product/logo_assets.png" alt="assets" class="w-[80%] mx-auto">
+        <div class="overflow-hidden bg-[#f3f4f6] flex items-center justify-center">
+          <img src="@/assets/product/logo_assets.png" alt="assets" class="w-[100%] mx-auto">
         </div>
         <div class="px-4 py-2">
           <h2 class="text-[16px] font-bold">{{ $t('message.productTitle') }}</h2>
@@ -37,8 +37,8 @@
       </li>
 
       <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(2)">
-        <div class="overflow-hidden bg-[#f3f4f6] h-[100px] flex items-center justify-center">
-          <img src="@/assets/product/logo_freight.png" alt="assets" class="w-[80%] mx-auto">
+        <div class="overflow-hidden bg-[#f3f4f6] flex items-center justify-center">
+          <img src="@/assets/product/logo_freight.png" alt="assets" class="w-[100%] mx-auto">
         </div>
         <div class="px-4 py-2">
           <h2 class="text-[16px] font-bold">{{ $t('message.productTitle2') }}</h2>
@@ -71,8 +71,8 @@
       </li>
 
       <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(3)">
-        <div class="overflow-hidden bg-[#f3f4f6] h-[100px] flex items-center justify-center">
-          <img src="@/assets/product/shipping_mobile.png" alt="assets" class="w-[80%] mx-auto">
+        <div class="overflow-hidden bg-[#f3f4f6] flex items-center justify-center">
+          <img src="@/assets/product/shipping_mobile.png" alt="assets" class="w-[100%] mx-auto">
         </div>
         <div class="px-4 py-2">
           <h2 class="text-[16px] font-bold">{{ $t('message.productTitle3') }}</h2>
@@ -105,8 +105,8 @@
       </li>
 
       <li class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(4)">
-        <div class="overflow-hidden bg-[#f3f4f6] h-[100px] flex items-center justify-center">
-          <img src="@/assets/product/logo_echemi.png" alt="assets" class="w-[80%] mx-auto">
+        <div class="overflow-hidden bg-[#f3f4f6] flex items-center justify-center">
+          <img src="@/assets/product/logo_echemi.png" alt="assets" class="w-[100%] mx-auto">
         </div>
         <div class="px-4 py-2">
           <h2 class="text-[16px] font-bold">{{ $t('message.productTitle4') }}</h2>

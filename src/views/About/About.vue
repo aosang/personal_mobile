@@ -186,7 +186,7 @@
         </h3>
       </template>
     </div>
-    <div v-show="active === 1">
+    <!-- <div v-show="active === 1">
       <img src="@/assets/common/working.jpg" alt="working" class="w-full mb-4 rounded-[10px] border border-gray-200" />
       <template v-if="locale === 'en'">
         <van-steps direction="vertical">
@@ -233,9 +233,9 @@
             如果您对我的工作经历感兴趣，请点击<a href="https://www.wangle.run/miles_cn.pdf" target="_blank" class="text-blue-500 text-[15px] font-bold">获取Miles的简历</a>查看并了解更多信息。
         </div>
       </template>
-    </div>
+    </div> -->
   </div>
-  <div
+  <!-- <div
     class="
     fixed 
     left-0 
@@ -272,7 +272,7 @@
     >
       {{ tab.title }}
     </div>
-  </div>
+  </div> -->
   <div class="w-full h-[60px]"></div>
 </template>
 

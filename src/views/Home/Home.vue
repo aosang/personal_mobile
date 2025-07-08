@@ -30,7 +30,7 @@
       <ul class="mt-4">
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg" alt="next.js" 
+            <img src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/nextjs-plain.svg" alt="next.js" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
@@ -40,7 +40,7 @@
         </li>
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="tailwindcssa" 
+            <img src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/tailwindcss-original.svg" alt="tailwindcssa" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
@@ -50,7 +50,7 @@
         </li>
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="typescript" 
+            <img src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/typescript-original.svg" alt="typescript" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
@@ -60,7 +60,7 @@
         </li>
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="vue" 
+            <img src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/vuejs-original.svg" alt="vue" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
@@ -70,7 +70,7 @@
         </li>
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" 
+            <img src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/nodejs-original-wordmark.svg" alt="nodejs" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
@@ -80,7 +80,7 @@
         </li>
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="supabase" 
+            <img src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/supabase-original.svg" alt="supabase" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
@@ -90,7 +90,7 @@
         </li>
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" 
+            <img src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/mongodb-original-wordmark.svg" alt="mongodb" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
@@ -100,7 +100,7 @@
         </li>
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain.svg" alt="postman" 
+            <img src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/postman-plain.svg" alt="postman" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
@@ -110,7 +110,7 @@
         </li>
         <li class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" 
+            <img src="https://www.wangle.run/images/myImage/myWebsite/svg_logo/figma-original.svg" alt="Figma" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
