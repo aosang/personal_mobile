@@ -3,7 +3,7 @@
     <div v-show="active === 0">
       <template v-if="locale === 'en'">
         <h3 class="text-[15px] text-gray-400 mb-3">
-          As an engineer with five years of experience in front-end development and three years in full-stack development, I have collaborated with many talented and diverse teams of developers and designers. We have delivered high-quality, user-friendly applications across various sectors, including healthcare, education, supply chain, and logistics. I have extensive development experience focused on businesses upstream and downstream of supply chains.
+          As an engineer with seven years of experience in front-end development, I have collaborated with many talented and diverse teams of developers and designers. We have delivered high-quality, user-friendly applications across various sectors, including healthcare, education, supply chain, and logistics. I have extensive development experience focused on businesses upstream and downstream of supply chains.
         </h3>
         <img src="@/assets/common/feday2024.jpg" alt="" class="w-full mb-4" />
         <h3 class="text-[15px] text-gray-400 mb-3">
@@ -97,7 +97,7 @@
     <div v-show="active === 0">
       <template v-if="locale === 'en'">
         <h3 class="text-[15px] text-gray-400 mb-3">
-          As an engineer with five years of experience in front-end development and three years in full-stack development, I have collaborated with many talented and diverse teams of developers and designers. We have delivered high-quality, user-friendly applications across various sectors, including healthcare, education, supply chain, and logistics. I have extensive development experience focused on businesses upstream and downstream of supply chains.
+          As an engineer with seven years of experience in front-end development, I have collaborated with many talented and diverse teams of developers and designers. We have delivered high-quality, user-friendly applications across various sectors, including healthcare, education, supply chain, and logistics. I have extensive development experience focused on businesses upstream and downstream of supply chains.
         </h3>
         <img src="@/assets/common/feday2024.jpg" alt="" class="w-full mb-4" />
         <h3 class="text-[15px] text-gray-400 mb-3">
