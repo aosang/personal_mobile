@@ -28,7 +28,8 @@ const routes = [{
   }]
 
 const router = createRouter({
-  // history: createWebHistory('/mymobile/'),
+  // 部署在站点根路径用 '/'；若挂在子路径（如 /mymobile/），改为 createWebHistory('/mymobile/')
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
 
