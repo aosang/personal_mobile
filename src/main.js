@@ -25,7 +25,7 @@ const checkAndRedirectForPC = () => {
   
   // 如果不是移动设备（即PC端），则跳转
   if (!isMobile) {
-    window.location.href = 'https://www.wangle.run/mypersonal';
+    window.location.href = 'https://mw.wangle.run';
   }
 }
 
