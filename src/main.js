@@ -4,7 +4,7 @@ import App from './App.vue'
 import router from './router'
 import { createI18n } from 'vue-i18n'
 
-import { Locale } from 'vant'
+import { Locale, showToast } from 'vant'
 import enUS from 'vant/es/locale/lang/en-US'
 import zhCN from 'vant/es/locale/lang/zh-CN'
 
@@ -64,7 +64,8 @@ import {
   Swipe,
   SwipeItem,
   FloatingBubble,
-  Skeleton
+  Skeleton,
+  Toast
 } from 'vant'
 import 'vant/lib/index.css'
 
@@ -80,7 +81,8 @@ import {
   MdBuildRound,
   MdDesignservices,
   MdOtherhousesSharp,
-  BiTranslate       
+  BiTranslate,
+  BiGithub
 } from "oh-vue-icons/icons";
 import { OhVueIcon } from "oh-vue-icons";
 
@@ -95,6 +97,7 @@ addIcons(MdBuildRound)
 addIcons(MdDesignservices)
 addIcons(MdOtherhousesSharp)
 addIcons(BiTranslate)
+addIcons(BiGithub)
 
 const app = createApp(App)
 app.use(router)
@@ -112,6 +115,7 @@ app.use(Swipe)
 app.use(SwipeItem)
 app.use(FloatingBubble )
 app.use(Skeleton)
+app.use(Toast)
 
 app.use(i18n)
 app.config.globalProperties.$switchLanguage = switchLanguage

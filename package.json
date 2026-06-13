@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.108.1",
+    "dompurify": "^3.4.10",
     "init": "^0.1.2",
+    "markdown-it": "^14.2.0",
     "oh-vue-icons": "^1.0.0-rc3",
     "postcss-px-to-viewport": "^1.1.1",
     "vant": "^4.9.18",

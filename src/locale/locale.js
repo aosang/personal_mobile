@@ -77,7 +77,7 @@ export const messages = {
       navhome: '首页',
       navproduct: '产品',
       navabout: '关于我',
-      navmtool: '工具推荐',
+      navmtool: '工具箱',
       navigation: '菜单导航',
       socialMedia: '联系我',
 

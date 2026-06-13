@@ -60,6 +60,13 @@
         <v-icon name="co-wechat" class="-ml-1 mr-1 text-green-600 w-[26px] h-[26px]" />
         <span class="text-[15px] mt-[2px]">{{ $t('message.socialwechat') }}</span>
       </div>
+      <div 
+        class="h-[48px] border-b border-gray-100 flex items-center pl-4"
+        @click="openSocialLink('https://github.com/aosang')"
+      >
+        <v-icon name="bi-github" class="-ml-1 mr-1 w-[26px] h-[26px]" />
+        <span class="text-[15px] mt-[2px]">GitHub</span>
+      </div>
     </nav>
   </van-popup>
 </template>
@@ -67,7 +74,9 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-const router = useRouter();
+
+const router = useRouter()
+
 
 const slideShow = ref(false)
 
