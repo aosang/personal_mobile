@@ -6,7 +6,7 @@
         :key="pro.id" 
         class="w-full bg-[#fff] rounded-[5px] border border-gray-200 mb-4 pb-2" @click="goToProductDetails(pro.id)">
         <div class="overflow-hidden bg-[#f3f4f6] flex items-center justify-center">
-          <img :src="pro.coverUrl" alt="assets" class="w-[100%] mx-auto">
+          <img :src="pro.coverUrl || '/placeholder-wide.png'" alt="assets" class="w-[100%] mx-auto">
         </div>
         <div class="px-4 py-2">
           <h2 class="text-[16px] font-bold my-1">{{ locale === "zh"? pro.productName : pro.productNameEn }}</h2>

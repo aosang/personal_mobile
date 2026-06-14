@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.1",
+    "dayjs": "^1.11.21",
     "dompurify": "^3.4.10",
     "init": "^0.1.2",
     "markdown-it": "^14.2.0",

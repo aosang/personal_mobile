@@ -11,6 +11,9 @@ importers:
       '@supabase/supabase-js':
         specifier: ^2.108.1
         version: 2.108.1
+      dayjs:
+        specifier: ^1.11.21
+        version: 1.11.21
       dompurify:
         specifier: ^3.4.10
         version: 3.4.10
@@ -538,6 +541,9 @@ packages:
   daemon@1.1.0:
     resolution: {integrity: sha512-1vX9YVcP21gt12nSD3SQRC/uPU7fyA6M8qyClTBIFuiRWoylFn57PwXhjBAqRl085bZAje7sILhZU48qcS9SWw==}
     engines: {node: '>= 0.8.0'}
+
+  dayjs@1.11.21:
+    resolution: {integrity: sha512-98IT+HOahAisibz/yjKbzuOBwYcjJ7BCLPzARyHiyEBmRz4fatF+KPJszEHXsGYjUG234aH/cOjW1wwTbKUZlA==, tarball: https://registry.npmmirror.com/dayjs/-/dayjs-1.11.21.tgz}
 
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
@@ -1300,6 +1306,8 @@ snapshots:
   csstype@3.2.3: {}
 
   daemon@1.1.0: {}
+
+  dayjs@1.11.21: {}
 
   didyoumean@1.2.2: {}
 

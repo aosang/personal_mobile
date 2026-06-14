@@ -5,6 +5,9 @@ const About = () => import('@/views/About/About.vue')
 const Product = () => import('@/views/Product/Product.vue')
 const Mtool = () => import('@/views/Mtool/Mtool.vue')
 const ProductDetails = () => import('@/views/ProductDetails/ProductDetails.vue')
+const Article = () => import('@/views/Article/Article.vue')
+const ArticleDetails = () => import('@/views/Article/ArticleDetails.vue')
+
 const routes = [{
     path: '/',
     name: 'Home',
@@ -25,6 +28,14 @@ const routes = [{
     path: '/productDetails/:id?',
     name: 'ProductDetails',
     component: ProductDetails
+  }, {
+    path: '/article',
+    name: 'Article',
+    component: Article
+  }, {
+    path: '/articleDetails/:id',
+    name: 'ArticleDetails',
+    component: ArticleDetails
   }]
 
 const router = createRouter({

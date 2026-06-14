@@ -31,10 +31,10 @@ const html = computed(() => {
   @apply text-xl font-bold mt-4 mb-2 text-gray-600;
 }
 .markdown-content :deep(h3) {
-  @apply text-lg font-bold mt-8 text-gray-800;
+  @apply text-lg font-bold mt-4 text-gray-800;
 }
 .markdown-content :deep(h4) {
-  @apply text-base font-bold mt-3 mb-2 text-gray-600;
+  @apply text-base font-bold mt-4 mb-2 text-gray-600;
 }
 .markdown-content :deep(p) {
   @apply text-gray-600 mt-3 text-[15px] leading-7;

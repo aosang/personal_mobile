@@ -6,7 +6,7 @@
     <van-swipe :autoplay="4000" :show-indicators="true">
       <van-swipe-item v-for="item in dataDetails.swiperList " :key="item">
         <van-skeleton title avatar :row="3" :loading="isLoading">
-          <img :src="item" alt="product image" class="w-full h-full">
+          <img :src="item || '/placeholder-wide.png'" alt="product image" class="w-full h-full">
         </van-skeleton>
       </van-swipe-item>
     </van-swipe>
@@ -51,7 +51,6 @@
 import { onMounted, onUnmounted, reactive, ref} from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { supabase } from '@/lib/client'
-import productData from './productData.json'
 import { showToast } from 'vant'
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()

@@ -65,7 +65,8 @@ import {
   SwipeItem,
   FloatingBubble,
   Skeleton,
-  Toast
+  Toast,
+  Empty
 } from 'vant'
 import 'vant/lib/index.css'
 
@@ -82,7 +83,8 @@ import {
   MdDesignservices,
   MdOtherhousesSharp,
   BiTranslate,
-  BiGithub
+  BiGithub,
+  FaUserAlt
 } from "oh-vue-icons/icons";
 import { OhVueIcon } from "oh-vue-icons";
 
@@ -98,6 +100,7 @@ addIcons(MdDesignservices)
 addIcons(MdOtherhousesSharp)
 addIcons(BiTranslate)
 addIcons(BiGithub)
+addIcons(FaUserAlt)
 
 const app = createApp(App)
 app.use(router)
@@ -116,6 +119,7 @@ app.use(SwipeItem)
 app.use(FloatingBubble )
 app.use(Skeleton)
 app.use(Toast)
+app.use(Empty)
 
 app.use(i18n)
 app.config.globalProperties.$switchLanguage = switchLanguage

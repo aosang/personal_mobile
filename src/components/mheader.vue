@@ -23,8 +23,12 @@
         <v-icon name="fa-microsoft" class="w-5 h-5 text-gray-500 mr-1" />
         <span class="mt-[2px]">{{ $t('message.navproduct') }}</span>
       </div>
-      <div class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/about')">
+      <div v-if="locale ==='zh'" class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/article')">
         <v-icon name="md-textsnippet" class="w-5 h-5 text-gray-500 mr-1" />
+        <span class="mt-[2px]">文章</span>
+      </div>
+      <div class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/about')">
+        <v-icon name="fa-user-alt" class="w-5 h-5 text-gray-500 mr-1" />
         <span class="mt-[2px]">{{ $t('message.navabout') }}</span>
       </div>
       <div class="w-full h-[48px] border-b border-gray-100 flex items-center pl-4 text-[15px]" @click="goToPage('/mtool')">
@@ -33,7 +37,7 @@
       </div>
     </nav>
     
-    <nav class="mt-[160px]">
+    <nav :class="locale === 'zh' ? 'mt-[210px]' : 'mt-[160px]'">
       <label class="text-[15px] pl-4 font-bold h-[40px] border-b border-gray-100 flex items-center text-[#222]">{{ $t('message.socialMedia') }}</label>
       <div 
         class="h-[48px] border-b border-gray-100 flex items-center pl-4"
@@ -72,11 +76,13 @@
 </template>
 
 <script setup>
+// import { locale } from 'dayjs';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
 
 const router = useRouter()
-
+const { locale } = useI18n()
 
 const slideShow = ref(false)
 

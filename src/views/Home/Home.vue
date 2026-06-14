@@ -2,7 +2,7 @@
   <div class="p-6 mt-[50px]">
     <div class="flex items-center">
       <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
-        <img :src="myInfoData.avatar_url" alt="avatar" class="w-full h-full object-cover" />
+        <img :src="myInfoData.avatar_url || '/placeholder-square.png'" alt="avatar" class="w-full h-full object-cover" />
         <!-- <img src="https://www.wangle.run/company_icon/public_image/pub_avatar.jpg" alt="avatar" class="w-full h-full object-cover" /> -->
       </div>
       <div class="ml-4">
@@ -30,7 +30,7 @@
       <ul class="mt-5">
         <li v-for="tech in technologyData" :key="tech.id" class="bg-white border border-gray-100 h-20 w-full flex items-center px-3 mb-2">
           <div class="flex items-center">
-            <img :src="tech.logoUrl" 
+            <img :src="tech.logoUrl || '/placeholder-square.png'" 
             class="mx-auto w-[36px] h-[36px]">
           </div>
           <div class="ml-4">
