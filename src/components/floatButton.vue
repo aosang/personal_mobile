@@ -1,7 +1,7 @@
 <template>
   <div class="
     fixed 
-    bottom-[60px] 
+    bottom-[40px] 
     right-[16px]
     w-[50px] 
     h-[50px]

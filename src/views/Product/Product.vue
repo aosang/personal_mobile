@@ -54,6 +54,7 @@ import { useRouter } from 'vue-router'
 import { supabase } from '@/lib/client';
 import { showToast } from 'vant';
 import { useI18n } from 'vue-i18n';
+import dayjs from '@/lib/dayjs';
 
 const router = useRouter()
 const { locale } = useI18n()
@@ -65,7 +66,9 @@ const fetchProductListData = async () => {
 
   if(error) return showToast('获取数据失败！')
 
-  productListData.value = data
+  productListData.value = [...(data || [])].sort(
+    (a, b) => dayjs(b.created_time).valueOf() - dayjs(a.created_time).valueOf()
+  )
 }
 
 onMounted(() => {

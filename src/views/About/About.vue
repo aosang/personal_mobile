@@ -1,44 +1,94 @@
 <template>
-  <div class="product-details py-2 px-4 mt-[40px]">
+  <div class="product-details py-2 px-4 mt-[56px]">
     <div v-show="active === 0">
       <template v-if="locale === 'en'">
-        <h3 class="text-[16px] text-gray-500 mb-3 leading-7">
-          As an engineer with seven years of experience in front-end development, I have collaborated with many talented and diverse teams of developers and designers. We have delivered high-quality, user-friendly applications across various sectors, including healthcare, education, supply chain, and logistics. I have extensive development experience focused on businesses upstream and downstream of supply chains.
-        </h3>
-        <img src="@/assets/common/feday2024.jpg" alt="" class="w-full mb-4" />
-        <h3 class="text-[16px] text-gray-500 mb-3 leading-7">
-          I am proficient in using Next.js, Tailwind CSS, Node.js, MongoDB, and Supabase to build application solutions for diverse scenarios.
-        </h3>
-        <h3 class="text-[16px] text-gray-500 mb-3 leading-7">
-          Furthermore, I am passionate about sharing industry knowledge and experience within the open-source community and frequently participate in offline technical conferences.
-        </h3>
         <van-divider
           content-position="center"
           class="font-bold"
-          style="color: #000; font-size: 16px"
+          style="color: #000; font-size: 22px"
         >
-          {{ $t('message.aboutTechnologyStack') }}
-        </van-divider
+          Who I Am
+        </van-divider>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          Hi, I'm Miles, a Full-Satck Developer
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          I got into frontend development somewhat by accident and have grown through hands-on work and self-directed learning ever since. What kept me going is simple: code turns into product quickly and solves real problems for users. That immediate sense of creation still drives me.
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          Over the years, I've moved beyond frontend into full-stack work, with the goal of taking a product from idea to launch largely on my own. I'm also exploring AI applications and SaaS in practice.
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          Beyond the code, I care about product experience, engineering quality, and long-term maintainability. I like to understand the business logic behind a feature and find better ways to improve workflows—not just ship what was asked for.
+        </h3>
+        <img src="@/assets/common/feday2024.jpg" alt="" class="w-full mb-5" />
+        <van-divider
+          content-position="center"
+          class="font-bold"
+          style="color: #000; font-size: 22px"
         >
-        <h3 class="text-[16px] text-gray-500 mb-1 leading-7">
-          <span class="font-bold">·{{ $t('message.aboutTechnologyStackFrontend') }}</span> <br />Vue3、React、Tailwind Css、TypeScript
+          Tech Stack
+        </van-divider>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          <span class="font-bold">Front-end:</span> <br />Vue, React, TypeScript, Tailwind CSS
         </h3>
-        <h3 class="text-[16px] text-gray-500 mb-1 leading-7">
-          <span class="font-bold">·{{ $t('message.aboutTechnologyStackFullstack') }}</span>
-          <br />Next.js、Nodejs、Supabase、MongoDB
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          <span class="font-bold">Cross-platform:</span>
+          <br />Uni-app, React Native
         </h3>
-        <h3 class="text-[16px] text-gray-500 mb-1 leading-7">
-          <span class="font-bold">·{{ $t('message.aboutTechnologyStackDesign') }}</span> <br />Figma、Photoshop
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          <span class="font-bold">Backend:</span> <br />Node.js
         </h3>
-        <h3 class="text-[16px] text-gray-500 mb-1 leading-7">
-          Proficient in English as an AI developer and user skilled in using AI
-          tools like cursor and dev0.
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          <span class="font-bold">DataBase:</span> <br />MongoDB, Supabase
         </h3>
-        <!-- <img
-          src="@/assets/common/skills.png"
-          alt="skills"
-          class="w-full mt-4 rounded-[10px] border border-gray-200"
-        /> -->
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          <span class="font-bold">Design:</span> <br />Photoshop (basic design and image editing)
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          Tools are means to an end. What I care about is building products that are useful and pleasant to use.
+        </h3>
+
+        <van-divider
+          content-position="center"
+          class="font-bold"
+          style="color: #000; font-size: 22px"
+        >
+          A Bit More
+        </van-divider>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          In 2023, I completed my bachelor's degree in Computer Science—a small way of closing the loop on not having a formal CS background earlier.
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          Outside work, I attend tech events in different cities to learn from peers and stay close to how teams work and where the industry is heading. I've been to events such as FE Day, VueConf, D2, Yunqi Conference, Google Developer Conference, and ChinaJoy. Staying open-minded and keeping learning often matters more than mastering any single technology.
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          I also maintain personal projects and my personal site to capture what I'm thinking and how I'm growing. I hope that sharing what I learn helps me connect with like-minded people.
+        </h3>
+
+        <van-divider
+          content-position="center"
+          class="font-bold"
+          style="color: #000; font-size: 22px"
+        >
+          What I'm Looking For
+        </van-divider>
+
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          Right now I'm especially interested in:
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          The team matters more than company size.
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          I gravitate toward teams that care about engineering quality, communicate thoughtfully, keep improving the product, and respect professional judgment.
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          Remote, in-office, or a small startup—I'm open as long as people work toward a shared goal with honesty and efficiency.
+        </h3>
+        <h3 class="text-[16px] text-gray-500 mb-2 leading-7">
+          If you value long-term thinking, continuous learning, and strong product experience, I'd love to connect.
+        </h3>
       </template>
       <template v-if="locale === 'zh'">
         <MarkDownContent :content="introductionText" />
